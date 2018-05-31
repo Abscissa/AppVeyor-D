@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+appveyor-d.so
+appveyor-d.dylib
+appveyor-d.dll
+appveyor-d.a
+appveyor-d.lib
+appveyor-d-test-*
+*.exe
+*.o
+*.obj
+*.lst
+
+/appveyor-d

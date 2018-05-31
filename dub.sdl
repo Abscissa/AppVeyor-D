@@ -1,0 +1,3 @@
+name "appveyor-d"
+description "Recommended appveyor.yml"
+license "WTFPLv2"
