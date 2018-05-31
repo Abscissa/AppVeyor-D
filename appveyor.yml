@@ -204,5 +204,4 @@ test_script:
  - echo %DMD%
  - echo %PATH%
  - '%DC% --help'
- - dub add-local .
  - dub test --arch=%Darch% --compiler=%DC%
