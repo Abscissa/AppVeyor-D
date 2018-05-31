@@ -1,4 +1,4 @@
-AppVeyor-D
+AppVeyor-D [![Build status](https://ci.appveyor.com/api/projects/status/g7b9tfp5qo6xuv7o/branch/master?svg=true)](https://ci.appveyor.com/project/Abscissa/appveyor-d/branch/master)
 ==========
 
 This project exists to provide a single place for the latest help using
