@@ -10,8 +10,8 @@ do the following:
 
 1. Copy the latest [`appveyor.yml`](https://github.com/Abscissa/AppVeyor-D/blob/master/appveyor.yml)
 from this project into your own D-language project
-(prefereably [GitHub](https://github.com/)-hosted.)
-Adjust for your own project as needeed.
+(preferably [GitHub](https://github.com/)-hosted.)
+Adjust for your own project as needed.
 
 2. Go to [AppVeyor](https://www.appveyor.com/) to setup your account and your project's GitHub repository.
 
