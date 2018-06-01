@@ -30,17 +30,20 @@ unittest
 {
 	auto DMD = environment.get("DMD", "dmd");
 	writeln("$DMD --help:");
+	stdout.flush();
 	spawnShell(DMD~" --help").wait;
 }
 
 unittest
 {
 	writeln("rdmd --help:");
+	stdout.flush();
 	spawnShell("rdmd --help").wait;
 }
 
 unittest
 {
 	writeln("dub --version:");
+	stdout.flush();
 	spawnShell("dub --version").wait;
 }
