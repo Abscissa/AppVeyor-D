@@ -21,10 +21,10 @@ from "msbuild" to "script".
 4. Check back here regularly, to https://github.com/Abscissa/AppVeyor-D,
 for support, to contribute, and to get updates for your `appveyor.yml` file.
 
-This project aims to provide MAXIMUM backwards compatability.
+This project aims to provide MAXIMUM backwards compatibility.
 This is important, because it is intended to help any D user utilize AppVeyor
 for their own needs, whatever those needs may be. Any regressions or
-removal of compantibility (if any at all), requires STRONG evidence that
+removal of compatibility (if any at all), requires STRONG evidence that
 maintaining compatibility is impossible without causing fundamental,
 unavoidable problems.
 
