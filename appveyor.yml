@@ -1,18 +1,18 @@
 platform: x64
 environment:
- matrix:
-  - DC: dmd
-    DVersion: stable
-    arch: x64
-  - DC: dmd
-    DVersion: stable
-    arch: x86
-  - DC: ldc
-    DVersion: stable
-    arch: x86
-  - DC: ldc
-    DVersion: stable
-    arch: x64
+  matrix:
+    - DC: dmd
+      DVersion: stable
+      arch: x64
+    - DC: dmd
+      DVersion: stable
+      arch: x86
+    - DC: ldc
+      DVersion: stable
+      arch: x86
+    - DC: ldc
+      DVersion: stable
+      arch: x64
 
 skip_tags: true
 
@@ -34,9 +34,8 @@ install:
             }
             if($env:arch -eq "x64"){
                 $env:PATH += ";C:\dmd2\windows\bin64;";
-            } else {
-                $env:PATH += ";C:\dmd2\windows\bin;";
             }
+            $env:PATH += ";C:\dmd2\windows\bin;";
             return $url;
         }
   - ps: function ResolveLatestLDC
@@ -82,9 +81,6 @@ install:
             }
         }
   - ps: SetUpDCompiler
-  - powershell -Command Invoke-WebRequest http://code.dlang.org/files/dub-1.11.0-windows-x86.zip -OutFile dub.zip
-  - 7z x dub.zip -odub > nul
-  - set PATH=%CD%\%binpath%;%CD%\dub;%PATH%
 
 before_build:
   - ps: if($env:arch -eq "x86"){
